@@ -20,7 +20,7 @@ function Employers(props) {
                   <div class="flex items-center">
                     <img
                       src={employer.image}
-                      width
+                      width="75px"
                       alt=""
                       className="rounded-full"
                     />
