@@ -5,7 +5,10 @@ import Header from "../components/Header";
 function Employee({ employeeDetail }) {
   return (
     <>
-      <Header title={"Employee Detail - " + employeeDetail.name} />
+      <Header
+        title={"Employee Detail - " + employeeDetail.name}
+        image={employeeDetail.image}
+      />
       <div className="m-5">
         <div className="w-96 border rounded shadow p-3">
           <div className="flex items-center border-b-2 pb-3">
@@ -18,10 +21,20 @@ function Employee({ employeeDetail }) {
           </div>
           <div>
             <ul>
-              <li>Age - {employeeDetail.age}</li>
-              <li>Salary - {employeeDetail.salary}</li>
-              <li>Designation - {employeeDetail.Designation}</li>
-              <li>Department - {employeeDetail.Department}</li>
+              <li>
+                <em>Age</em> - <strong>{employeeDetail.age}</strong>
+              </li>
+              <li>
+                <em>Salary</em> - <strong>{employeeDetail.salary}</strong>
+              </li>
+              <li>
+                <em>Designation</em> -{" "}
+                <strong>{employeeDetail.Designation}</strong>
+              </li>
+              <li>
+                <em>Department</em> -{" "}
+                <strong>{employeeDetail.Department}</strong>
+              </li>
             </ul>
           </div>
         </div>
