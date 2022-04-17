@@ -1,6 +1,4 @@
-# Micro-frontend using `create-mf-app`
-
-> Micro-frontend Application using `create-mf-app`
+# Micro-Frontend Example
 
 ## Table of Contents
 
@@ -10,7 +8,10 @@
 
 ## Introduction
 
-This Project is a micro-frontend using `create-mf-app` cli which gives us flexibility to create a micro-frontend boilerplate with a single command.
+This Project is a micro-frontend demonstration, created using following two approach-
+
+1. `create-mf-app` cli which gives us flexibility to create a micro-frontend boilerplate with a single command.
+2. Through overriding webpack configuration and creating MF setup to expose modules/components from one application to be used in another application.
 
 ## Project Description
 
@@ -22,8 +23,10 @@ Both the applications are using shared components/sub-modules demonstrating how 
 
 ## Installation
 
-1. clone the repo in your local system using `git clone https://github.com/rishavpandey43/micro-frontend-create-mf.git`
+1. clone the repo in your local system using `git clone https://github.com/rishavpandey43/micro-frontend-demonstration.git`
 
-2. navigate to both the folders separately in new terminal and run `yarn && yarn start`
+2. Checkout to different branches `micro-frontend-create-mf-app-cli` or `micro-frontend-native-webpack` and follow the instructions
 
-3. Employer Application should be served on port `8080` and Employee Application should be served on port `3000`
+3. navigate to both the folders separately in different terminals and run `yarn && yarn start`
+
+4. _Employer Application_ will be served on port `8080` and _Employee Application_ will be served on port `3000`
