@@ -1,5 +1,7 @@
 # Micro-Frontend Example
 
+> Demonstrating the use of Module Federation in webpack to create Micro-Frontend Application
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -11,7 +13,7 @@
 This Project is a micro-frontend demonstration, created using following two approach-
 
 1. `create-mf-app` cli which gives us flexibility to create a micro-frontend boilerplate with a single command.
-2. Through overriding webpack configuration and creating MF setup to expose modules/components from one application to be used in another application.
+2. Through overriding webpack configuration and creating module-federation setup to expose modules/components from one application to be used in another application.
 
 ## Project Description
 
