@@ -1,23 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 import Header from "../components/Header";
 
 function Employee({ employeeDetail, goBack }) {
-  return (
+  return employeeDetail ? (
     <>
       <Header
         title={"Employee Detail - " + employeeDetail.name}
         image={employeeDetail.image}
       />
       <div className="m-10">
-        {goBack && (
-          <div className="my-5">
-            ⟵
-            <Link className="ml-3" to="/">
-              Go Back
-            </Link>
-          </div>
-        )}
+        <BrowserRouter>
+          {goBack && (
+            <div className="my-5">
+              ⟵
+              <Link className="ml-3" to="/">
+                Go Back
+              </Link>
+            </div>
+          )}
+        </BrowserRouter>
         <div className="w-96 border rounded shadow p-3">
           <div className="flex items-center border-b-2 pb-3">
             <img
@@ -48,6 +50,8 @@ function Employee({ employeeDetail, goBack }) {
         </div>
       </div>
     </>
+  ) : (
+    <h1 className="text-blue-600 text-5xl m-5">No Employee Detail Present</h1>
   );
 }
 

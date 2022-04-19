@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Header from "employee/Header";
-
 import data from "../data";
+
+const Header = React.lazy(() => import("employee/Header"));
 
 function Employers(props) {
   return (
     <>
-      {/* <Header title="All Employees" /> */}
+      <Header title="All Employees" />
       <main>
         <div className="container mx-auto p-5">
           <div className="flex flex-wrap">
@@ -16,7 +16,7 @@ function Employers(props) {
                 className="sm:w-full md:w-64 m-3 border rounded p-3 shadow-lg hover:shadow"
                 key={employer.id}
               >
-                <Link to={"/employee/" + employer.id}>
+                <Link to="/employee-detail">
                   <div className="flex items-center">
                     <img
                       src={employer.image}
